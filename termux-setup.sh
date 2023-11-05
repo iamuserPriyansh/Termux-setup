@@ -1,9 +1,9 @@
 #!/bin/bash
-echo " ======================================"
-echo " 8                               termux setup                                        8"
-echo " 8     Autemated the process of installing and update   8"
-echo " 8                          Updated: 05/11/23                                  8"
-echo " ======================================"
+echo " ====================================================================================="
+echo " 8                               Termux Setup Script                                 8"
+echo " 8                Autemated the process of installing and update                     8"
+echo " 8                               Updated: 05/11/23                                   8"
+echo " ======================================================================================"
 
 
 
