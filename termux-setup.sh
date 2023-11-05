@@ -1,11 +1,9 @@
 #!/bin/bash
-
-#########################################################
-# ***               termux setup                    *** #
-#    Autemated the process of installing and update     #
-# ***               Updated: 08/09/23               *** #
-#########################################################
-
+echo " ======================================"
+echo " 8                               termux setup                                        8"
+echo " 8     Autemated the process of installing and update   8"
+echo " 8                          Updated: 05/11/23                                  8"
+echo " ======================================"
 
 
 
@@ -374,193 +372,193 @@ pkg upgrade -y
 clear
 #-----------------------------------------------------------------------------
 
-
-echo "Termux banner"
-echo "-------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-git clone https://github.com/Bhai4You/Termux-Banner.git
-cd Termux-Banner
-bash requirement.sh
-bash t-ban.sh
-cd ..
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing sudo"
-echo "----------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-pkg install tsu -y
-git clone https://github.com/MFDGaming/ubuntu-in-termux.git
-cd ubuntu-in-termux
-chmod +x ubuntu.sh
-bash ubuntu.sh
-cd ..
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Information Gathering Tools"
-echo "--------------------------------------"
-sleep 2.0
-echo "Installing Network Scanning Tools"
-sleep 1.0
-pkg update -y
-pkg upgrade -y
-pkg install nmap
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Information Gathering Tools"
-echo "--------------------------------------"
-sleep 0.5
-echo "Installing Phone number Information Gathering tool"
-sleep 1.0
-pkg update -y
-pkg upgrade -y
-git clone https://github.com/sundowndev/PhoneInfoga
-cd PhoneInfoga
-python3 -m pip install -r requirements.txt
-chmod +x phoneinfoga.py
-cd ..
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Information Gathering Tools"
-echo "--------------------------------------"
-sleep 0.5
-echo "Installing Red Hawk Toolkit"
-sleep 1.0
-pkg update -y
-pkg upgrade -y
-git clone https://github.com/Tuhinshubhra/RED_HAWK.git
-cd RED_HAWK
-chmod +x rhawk.php
-cd ..
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Information Gathering Tools"
-echo "--------------------------------------"
-sleep 0.5
-echo "Installing Instagram Information Gathering tool"
-sleep 1.0
-pkg update -y
-pkg upgrade -y
-git clone https://github.com/th3unkn0n/osi.ig.git
-cd osi.ig
-python3 -m pip install -r requirements.txt
-cd ..
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Information Gathering Tools"
-echo "--------------------------------------"
-sleep 0.5
-echo "Installing Litte Brother Information Gathering tool"
-sleep 1.0
-pkg update -y
-pkg upgrade -y
-git clone https://github.com/lulz3xploit/LittleBrother.git
-cd LittleBrother
-python3 -m pip install -r requirements.txt
-pip install -r requirements.txt
-cd ..
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Social engineering toolkit"
-echo "-------------------------------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-git clone https://github.com/trustedsec/social-engineer-toolkit.git
-cd social-engineer-toolkit
-pip3 install -r requirements.txt
-python3 setup.py 
-cd ..
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing fSociety"
-echo "-------------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-git clone https://github.com/Manisso/fsociety.git
-cd fsociety
-chmod +x fsociety.py
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Tools using Darkfly toolkit"
-echo "--------------------------------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-git clone https://github.com/Ranginang67/DarkFly-Tool.git
-cd DarkFly-Tool
-chmod +x install.py
-python2 install.py
-cd..
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Metasploit"
-echo "---------------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-wget https://github.com/gushmazuko/metasploit_in_termux/raw/master/metasploit.sh
-chmod +x metasploit.sh
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Fun with Termux"
-echo "----------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-pkg install sl -y
-pkg install fish -y
-pkg install cmatrix -y
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing Footprinting Tools"
-echo "-----------------------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-pkg install dnsutils -y
-clear
-#-----------------------------------------------------------------------------
-
-
-echo "Installing TBomb"
-echo "----------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
-pip3 install tbomb
-git clone https://github.com/TheSpeedX/TBomb.git    
-clear
-#-----------------------------------------------------------------------------
-
+# 
+# echo "Termux banner"
+# echo "-------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# git clone https://github.com/Bhai4You/Termux-Banner.git
+# cd Termux-Banner
+# bash requirement.sh
+# bash t-ban.sh
+# cd ..
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing sudo"
+# echo "----------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# pkg install tsu -y
+# git clone https://github.com/MFDGaming/ubuntu-in-termux.git
+# cd ubuntu-in-termux
+# chmod +x ubuntu.sh
+# bash ubuntu.sh
+# cd ..
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Information Gathering Tools"
+# echo "--------------------------------------"
+# sleep 2.0
+# echo "Installing Network Scanning Tools"
+# sleep 1.0
+# pkg update -y
+# pkg upgrade -y
+# pkg install nmap
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Information Gathering Tools"
+# echo "--------------------------------------"
+# sleep 0.5
+# echo "Installing Phone number Information Gathering tool"
+# sleep 1.0
+# pkg update -y
+# pkg upgrade -y
+# git clone https://github.com/sundowndev/PhoneInfoga
+# cd PhoneInfoga
+# python3 -m pip install -r requirements.txt
+# chmod +x phoneinfoga.py
+# cd ..
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Information Gathering Tools"
+# echo "--------------------------------------"
+# sleep 0.5
+# echo "Installing Red Hawk Toolkit"
+# sleep 1.0
+# pkg update -y
+# pkg upgrade -y
+# git clone https://github.com/Tuhinshubhra/RED_HAWK.git
+# cd RED_HAWK
+# chmod +x rhawk.php
+# cd ..
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Information Gathering Tools"
+# echo "--------------------------------------"
+# sleep 0.5
+# echo "Installing Instagram Information Gathering tool"
+# sleep 1.0
+# pkg update -y
+# pkg upgrade -y
+# git clone https://github.com/th3unkn0n/osi.ig.git
+# cd osi.ig
+# python3 -m pip install -r requirements.txt
+# cd ..
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Information Gathering Tools"
+# echo "--------------------------------------"
+# sleep 0.5
+# echo "Installing Litte Brother Information Gathering tool"
+# sleep 1.0
+# pkg update -y
+# pkg upgrade -y
+# git clone https://github.com/lulz3xploit/LittleBrother.git
+# cd LittleBrother
+# python3 -m pip install -r requirements.txt
+# pip install -r requirements.txt
+# cd ..
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Social engineering toolkit"
+# echo "-------------------------------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# git clone https://github.com/trustedsec/social-engineer-toolkit.git
+# cd social-engineer-toolkit
+# pip3 install -r requirements.txt
+# python3 setup.py 
+# cd ..
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing fSociety"
+# echo "-------------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# git clone https://github.com/Manisso/fsociety.git
+# cd fsociety
+# chmod +x fsociety.py
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Tools using Darkfly toolkit"
+# echo "--------------------------------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# git clone https://github.com/Ranginang67/DarkFly-Tool.git
+# cd DarkFly-Tool
+# chmod +x install.py
+# python2 install.py
+# cd..
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Metasploit"
+# echo "---------------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# wget https://github.com/gushmazuko/metasploit_in_termux/raw/master/metasploit.sh
+# chmod +x metasploit.sh
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Fun with Termux"
+# echo "----------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# pkg install sl -y
+# pkg install fish -y
+# pkg install cmatrix -y
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing Footprinting Tools"
+# echo "-----------------------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# pkg install dnsutils -y
+# clear
+# #-----------------------------------------------------------------------------
+# 
+# 
+# echo "Installing TBomb"
+# echo "----------------"
+# sleep 0.5
+# pkg update -y
+# pkg upgrade -y
+# pip3 install tbomb
+# git clone https://github.com/TheSpeedX/TBomb.git    
+# clear
+# #-----------------------------------------------------------------------------
+# 
 
 echo "Finshing the setup"
 pkg update
