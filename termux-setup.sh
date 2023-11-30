@@ -1,376 +1,280 @@
-#!/bin/bash
-echo " ====================================================================================="
-echo " 8                               Termux Setup Script                                 8"
-echo " 8                Autemated the process of installing and update                     8"
-echo " 8                               Updated: 05/11/23                                   8"
-echo " ======================================================================================"
-
-
-
-echo "Updating Termux Packages"
-echo "------------------------"
-
 pkg update
 pkg upgrade
-clear
-#-----------------------------------------------------------------------------
-
-
 
 pkg autoclean
 pkg clean
-#-----------------------------------------------------------------------------
+
+termux-change-repo
 
 
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing cURL"
-sleep 0.5
-pkg install curl -y
+echo "curl"
+sleep 1.0
+pkg install curl
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing git"
-sleep 0.5
-pkg install git -y
+echo "git"
+sleep 1.0
+pkg install git
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing wget "
-sleep 0.5
-pkg install wget -y
+echo "wget"
+sleep 1.0
+pkg install wget
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Zip"
-sleep 0.5
-pkg install zip -y
+echo "zip"
+sleep 1.0
+pkg install zip
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing unZip"
-sleep 0.5
-pkg install unzip -y
+echo "unzip"
+sleep 1.0
+pkg install unzip
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing  python"
-sleep 0.5
-pkg install python -y
-pkg install python2 -y
-pkg install python3 -y
+echo "python3"
+sleep 1.0
+pkg install python3
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Nodejs "
-sleep 0.5
-pkg install nodejs -y
+echo "python2"
+sleep 1.0
+pkg Install python2
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing jq (pre Format JSON result)"
-sleep 0.5
-pkg install jq -y
+echo "python"
+sleep 1.0
+pkg install python
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing libxml2-utils"
-sleep 0.5
-pkg install libxml2-utils -y
+echo "nodejs"
+sleep 1.0
+pkg install nodejs
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing grep"
-sleep 0.5
-pkg install grep -y
+echo "nodejs-lts"
+sleep 1.0
+pkg install nodejs-lts
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing bc (Arbitrary Precision Calculator language)"
-sleep 0.5
-pkg install bc -y
+echo "jq"
+sleep 1.0
+pkg install jq
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing  htop (Task manager & system Monitor)"
-sleep 0.5
-pkg install htop -y
+echo "libxml2-utils"
+sleep 1.0
+pkg install libxml2-utils
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing figlet"
-sleep 0.5
-pkg install figlet -y
+echo "grep"
+sleep 1.0
+pkg install grep
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing httping (pinging tool for HTTP requests)"
-sleep 0.5
-pkg install httping -y
+echo "bc"
+sleep 1.0
+pkg install bc
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing dnsutils (Mostly i use this tool for find the website/blog IP address)"
-sleep 0.5
-pkg install dnsutils -y
+echo "htop"
+sleep 1.0
+pkg install htop
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing openssh (For Managing My Servers SSH & SFTP)"
-sleep 0.5
-pkg install openssh -y
+echo "figlet"
+sleep 1.0
+pkg install figlet
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing FFmpeg (Handling video, audio, and other multimedia files and streams)"
-sleep 0.5
-pkg install ffmpeg -y
+echo "httping"
+sleep 1.0
+pkg install httping
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing PHP"
-sleep 0.5
-pkg install php -y
+echo "dnsutils"
+sleep 1.0
+pkg install dnsutils
 clear
-#-----------------------------------------------------------------------------
 
+echo "openssh"
+sleep 1.0
+pkg install openssh
+clear
 
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing PHP Composer"
-sleep 0.5
+echo "ffmpeg"
+sleep 1.0
+pkg install ffmpeg
+clear
+
+echo "php"
+sleep 1.0
+pkg install php
+clear
+
+echo "php-composer"
+sleep 1.0
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/data/data/com.termux/files/usr/bin --filename=composer
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing nano Editor"
-sleep 0.5
-pkg install nano -y
+echo "nano"
+sleep 1.0
+pkg install nano
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Zsh shell"
-sleep 0.5
-pkg install zsh -y
+echo "zsh"
+sleep 1.0
+pkg install zsh
 clear
-#-----------------------------------------------------------------------------
+
+echo "g++"
+sleep 1.0
+pkg install g++
+clear
 
 
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Python Modules"
-sleep 0.5
+echo "pip-setuptools"
+sleep 1.0
 pip install --upgrade pip setuptools
+clear
+
+echo "pip-httpie"
+sleep 1.0
 pip install --upgrade httpie
+clear
+
+echo "pip-requests[socks]"
+sleep 1.0
 pip install -U requests[socks]
+clear
+
+echo "pip-requests"
+sleep 1.0
 pip install requests
 clear
-#-----------------------------------------------------------------------------
 
 
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Required packages for Python development"
-echo "---------------------------------------------------"
+
+echo "clanf"
+sleep 1.0
+pkg install clang
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Required packages for Python development"
-echo "---------------------------------------------------"
-echo "Installing clang "
-sleep 0.5
-pkg install clang -y
+echo "libffi"
+sleep 1.0
+pkg install libffi
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Required packages for Python development"
-echo "---------------------------------------------------"
-echo "Installing libffi"
-sleep 0.5
-pkg install libffi -y
+echo "openssl"
+sleep 1.0
+pkg install openssl
 clear
-#-----------------------------------------------------------------------------
 
 
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing openssl"
-sleep 0.5
-pkg install openssl -y
+echo "pip-ddgr"
+sleep 1.0
+pip install ddgr
 clear
-#-----------------------------------------------------------------------------
 
 
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing  screenfetch (System Information Generator)"
-sleep 0.5
-pkg install screenfetch -y
-pkg install neofetch -y
+
+echo "screenfetch"
+sleep 1.0
+pkg install screenfetch
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing w3m - Text based Web browser"
-sleep 0.5
-pkg install w3m -y
+echo "w3m"
+sleep 1.0
+pkg install w3m
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing cowsay"
-sleep 0.5
-pkg install cowsay -y
+echo "cowsay"
+sleep 1.0
+pkg install cowsay
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing perl"
-sleep 0.5
-pkg install perl -y
+echo "perl"
+sleep 1.0
+pkg install perl
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Ruby"
-sleep 0.5
-pkg install ruby -y
+echo "ruby"
+sleep 1.0
+pkg install ruby
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing Rust"
-sleep 0.5
-pkg install rust -y
+echo "rust"
+sleep 1.0
+pkg install rust
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing sqlite"
-sleep 0.5
-pkg install sqlite -y
+echo "cloudflared"
+sleep 1.0
+pkg install Cloudflared
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing fakeroot"
-sleep 0.5
-pkg install fakeroot -y
+echo "sqlite"
+sleep 1.0
+pkg install sqlite
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing sshpass"
-sleep 0.5
-pkg install sshpass -y
+echo "fakeroot"
+sleep 1.0
+pkg install fakeroot
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing golang"
-sleep 0.5
-pkg install golang -y
+echo "sshpass"
+sleep 1.0
+pkg install sshpass
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Installing Major Tools"
-echo "----------------------"
-echo "Installing PRoot"
-sleep 0.5
-pkg install proot -y
+echo "golang"
+sleep 1.0
+pkg install golang
 clear
-#-----------------------------------------------------------------------------
 
-
-echo "Updating Termux"
-echo "---------------"
-sleep 0.5
-pkg update -y
-pkg upgrade -y
+echo "proot"
+sleep 1.0
+pkg install proot
 clear
-#-----------------------------------------------------------------------------
+
+
+echo "termux-exec"
+sleep 1.0
+pkg install termux-exec
+clear
+
+echo "termux-api"
+sleep 1.0
+pkg install termux-api
+clear
+
+
+echo "update"
+sleep 1.0
+pkg update
+clear
+
+echo "upgrade"
+sleep 1.0
+pkg upgrade
+clear
+
+
+#Termux Styling
+echo "ohmyzsh"
+sleep 1.0
+
+mkdir code
+
+mkdir terminal
+git clone https://github.com/robbyrussell/oh-my-zsh.git 
+cd .oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
+cd ..
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 
 # 
 # echo "Termux banner"
